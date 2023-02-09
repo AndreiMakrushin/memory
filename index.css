@@ -6,7 +6,7 @@
   body {
     height: 100vh;
     display: flex;
-    background: #060AB2;
+    background: #7f0bcc;
   }
   
   .memory-game {
@@ -46,4 +46,30 @@
   }
   .front-face {
     transform: rotateY(180deg);
+  }
+  .modal-block{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: .3s;
+  }
+  .modal-blur{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .modal-window{
+    background-color: purple;
+    padding: 80px;
+    color: pink;
+    border-radius: 20px;
+  }
+  .show{
+    transition: .3s;
+    opacity: 1;
+    z-index: 10;
   }
