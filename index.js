@@ -5,9 +5,9 @@ let hasFlippedCard = false
 let firstCard, secondCard
 let lockBoard = false
 
-/*cards.forEach(card=>{
+cards.forEach(card=>{
     card.style.order = Math.floor(Math.random()*12)
-})*/
+})
 cards.forEach(card=>card.addEventListener('click', (e)=>{
     if (e.target.closest('.flip')){return}
     if (lockBoard){return}
