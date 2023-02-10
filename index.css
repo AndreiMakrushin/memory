@@ -40,6 +40,12 @@
     max-height: calc(19.333% - 13px);
     }
   }
+  @media (width < 400px) {
+    .memory-card{
+    max-width: calc(19%);
+    max-height: calc(15.333% - 13px);
+    }
+  }
   .front-face,
   .back-face {
     width: 100%;
