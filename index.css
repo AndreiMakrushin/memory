@@ -28,7 +28,18 @@
     transform-style: preserve-3d;
     transition: transform .5s;
   }
-  
+  @media (width < 700px) {
+    .memory-card{
+    max-width: calc(19% - 10px);
+    max-height: calc(27.333% - 13px);
+    }
+  }
+  @media (width < 500px) {
+    .memory-card{
+    max-width: calc(20%);
+    max-height: calc(19.333% - 13px);
+    }
+  }
   .front-face,
   .back-face {
     width: 100%;
